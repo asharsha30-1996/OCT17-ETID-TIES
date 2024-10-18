@@ -4,13 +4,13 @@ const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const path=require('path');
 const dotenv=require('dotenv')
-
+const cors = require('cors');
 // Create an instance of Express
 const app = express();
 
 // Middleware for parsing JSON request bodies
 app.use(bodyParser.json());
-
+app.use(cors());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');

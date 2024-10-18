@@ -13,7 +13,7 @@ function Box() {
         <Link to="/rooms/4"><button>Room 4</button></Link>
         <Link to="/rooms/5"><button>Room 5</button></Link>
         <Link to="/rooms/6"><button>Room 6</button></Link>
-        <Link to="/rooms/7"><button>Room 7</button></Link> {/* Add new rooms */}
+        <Link to="/rooms/7"><button>Room 7</button></Link> 
         <Link to="/rooms/8"><button>Room 8</button></Link>
         <Link to="/rooms/9"><button>Room 9</button></Link>
         <Link to="/rooms/10"><button>Room 10</button></Link>

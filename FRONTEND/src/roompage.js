@@ -14,8 +14,9 @@ function RoomPage() {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/rooms/${roomId}`);
-        if (response.ok) {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/rooms/${roomId}`); 
+       	console.log(`${process.env.REACT_APP_BACKEND_URL}/api/rooms/${roomId}`);
+	 if (response.ok) {
           const data = await response.json();
           setStudents(data);
         } else {
