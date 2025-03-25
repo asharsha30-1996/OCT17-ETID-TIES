@@ -20,7 +20,7 @@ module.exports = function(db) {
       console.log('Scores:', scores);
 
       // Store the data in MongoDB
-      await db.collection('scores').insertOne({
+      await db.collection('scores_buyer').insertOne({
         roomNumber,
         judgeName,
         bestCandidate,
